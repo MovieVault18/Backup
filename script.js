@@ -1,10 +1,57 @@
 // Movie database (replace with dynamic database fetch later)
 const movies = {
     Action: [
-        { title: "", poster: "madmax.jpg", rating: "8.1" },
-        { title: "John Wick", poster: "johnwick.jpg", rating: "7.9" }
-
-    ],
+  {
+    "title": "The Terminator",
+    "poster": "img/ac1.jpg",
+    "rating": "8.1"
+  },
+  {
+    "title": "Terminator 2: Judgement Day",
+    "poster": "img/ac2.jpg",
+    "rating": "8.6"
+  },
+  {
+    "title": "The Matrix",
+    "poster": "img/ac3.jpg",
+    "rating": "8.7"
+  },
+  {
+    "title": "John Wick",
+    "poster": "img/ac4.jpg",
+    "rating": "7.5"
+  },
+  {
+    "title": "Gladiator",
+    "poster": "img/ac5.jpg",
+    "rating": "8.5"
+  },
+  {
+    "title": "Dhoom",
+    "poster": "img/ac6.jpg",
+    "rating": "6.6"
+  },
+  {
+    "title": "Shershaah",
+    "poster": "img/ac7.jpg",
+    "rating": "8.3"
+  },
+  {
+    "title": "Dangal",
+    "poster": "img/ac8.jpg",
+    "rating": "8.3"
+  },
+  {
+    "title": "Lucifer",
+    "poster": "img/5.jpg",
+    "rating": "7.5"
+  },
+  {
+    "title": "Marco",
+    "poster": "img/ac10.jpg",
+    "rating": "6.9"
+  }
+],
     Thriller: [
   {
     title: "Andhadhun",
