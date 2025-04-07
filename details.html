@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>MovieVault</h1>
+        <a href="index.html" class="back-btn">⬅ Back to Movies</a>
+    </header>
+
+    <div id="movie-details">
+        <div class="poster-container">
+            <img id="movie-poster" src="" alt="Movie Poster">
+        </div>
+        <div class="info-container">
+            <h2 id="movie-title"></h2>
+            <p id="movie-rating">⭐</p>
+            <p id="movie-genre"><strong>Genre:</strong> </p>
+            <p id="movie-year"><strong>Year:</strong> </p>
+            <p id="movie-description"></p>
+        </div>
+    </div>
+
+    <script>
+        // Example movie data (replace with database fetch)
+        const movies = {
+            1: { 
+                title: "INCEPTION", 
+                poster: "img/1.jpg", 
+                rating: "8.8", 
+                genre: "Thriller, Adventure ", 
+                year: "2010",
+                description: "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the project and his team to disaster."
+            },
+            2: { 
+                title: "THE DARK KNIGHT",
+                poster: "img/2.jpg",
+                rating: "9.0",
+                genre: "Action, Crime, Drama",
+                year: "2008",
+                description: "When a menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman, James Gordon and Harvey Dent must work together to put an end to the madness."
+            },
+            3: { 
+                title: "INTERSTELLAR",
+                poster: "img/3.jpg", 
+                rating: "6.8",  
+                genre: "Adventure, Sci-Fi",
+                year: "2014", 
+                description: "When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans."
+            },
+            4: { 
+                title: "PANDIPPADA", 
+                poster: "img/4.jpg", 
+                rating: "6.8", 
+                genre: "Mystery, Drama", 
+                year: "2005",
+                description: "A financially backward man, who tries out different business plans gets involved in the land conflict between two powerful landlords."
+            },
+            5: { 
+                title: "LUCIFER", 
+                poster: "img/5.jpg", 
+                rating: "7.5", 
+                genre: "Action, Political Drama, Thriller", 
+                year: "2019",
+                description: "A political Godfather dies and a lot of thieves dressed up as politicians took over the rule. Question arises regarding the successor of the God, unfolding few names, along with the God's most beloved angel, Lucifer."
+            },
+            6: { 
+                title: "PONMAN", 
+                poster: "img/6.jpg",
+                rating: "7.4", 
+                genre: "Comedy, Drama", 
+                year: "2025",
+                description: "Gold dealer Ajesh lends precious sovereigns for a village wedding, but finds himself in danger when the bride's criminal husband schemes to keep the gold and silence him forever."
+            },
+            7: { 
+                title: "TRAIN TO BUSAN", 
+                poster: "img/7.jpg", 
+                rating: "7.6", 
+                genre: "Tragedy, Drama, Action, Thriller", 
+                year: "2016",
+                description: "While a zombie virus breaks out in South Korea, passengers struggle to survive on the train from Seoul to Busan."
+            },
+            8: { 
+                title: "BREAKING BAD", 
+                poster: "img/8.jpg", 
+                rating: "9.5", 
+                genre: "Drug rime, Drama, Thriller", 
+                year: "2008-2013",
+                description: "A chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine with a former student to secure his family's future."
+            },
+            9: { 
+                title: "CHERNOBYL", 
+                poster: "img/9.jpg",
+                rating: "9.3", 
+                genre: "Disaster, Docudrama", 
+                year: "2019",
+                description: "In April 1986, the city of Chernobyl in the Soviet Union suffers one of the worst nuclear disasters in the history of mankind. Consequently, many heroes put their lives on the line in the following days, weeks and months."
+            },
+            10: { 
+                title: "GAME OF THRONES", 
+                poster: "img/10.jpg",
+                rating: "9.2", 
+                genre: "Action, Dark Fantasy ,Tragedy", 
+                year: "2011-2019",
+                description: "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia."
+            },
+            11: { 
+                title: "ALL OF US ARE DEAD", 
+                poster: "img/11.jpg",
+                rating: "7.6", 
+                genre: "Zombie Horror, Korean Drama", 
+                year: "2022",
+                description: "A high school becomes ground zero for a zombie virus outbreak. Trapped students must fight their way out or turn into one of the rabid infected."
+            },
+            12: { 
+                title: "ALICE IN BORDERLAND", 
+                poster: "img/12.jpg", 
+                rating: "7.7", 
+                genre: "Cyber Thriller, Psychological Drama", 
+                year: "2020",
+                description: "Arisu - a listless, jobless and video-game-obsessed young man - suddenly finds himself in a strange, emptied-out version of Tokyo in which he and his friends must compete in dangerous games in order to survive."
+            },
+            13: { 
+                title: "THE WALKING DEAD", 
+                poster: "img/13.jpg", 
+                rating: "8.1", 
+                genre: "Zombie Horror, Drama, Thriller", 
+                year: "2010-2022",
+                description: "Sheriff Deputy Rick Grimes wakes up from a coma to learn the world is in ruins and must lead a group of survivors to stay alive."
+            },
+            14: { 
+                title: "FARZI", 
+                poster: "img/14.jpg", 
+                rating: "8.3", 
+                genre: "Crime, Thriller, Drama", 
+                year: "2023",
+                description: "An artist who gets pulled into the murky high stakes of a con job and a fiery task force officer on the mission to rid the country of his menaces in a fast-paced, edgy one-of-a-kind thriller."
+            },
+            15: { 
+                title: "SOLO LEVELING", 
+                poster: "img/15.jpg", 
+                rating: "8.7", 
+                genre: "Action, Anime, Dark Fantasy", 
+                year: "2024",
+                description: "Follows the adventures of Sung Jinwoo in a world that is constantly threatened by monsters and evil forces. In his battles Sung transforms himself from the weakest hunter of all mankind to one of the strongest hunters in existence."
+            },
+            16: { 
+                title: "ATTACK ON TITAN", 
+                poster: "img/16.jpg", 
+                rating: "9.1", 
+                genre: "Action, Adult Animation, Monster Horror", 
+                year: "2013-2023",
+                description: "After his hometown is destroyed, young Eren Jaeger vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction."
+            },
+            17: { 
+                title: "DEMON SLAYER", 
+                poster: "img/17.jpg", 
+                rating: "8.6", 
+                genre: "Anime, Action, Adventure", 
+                year: "2019",
+                description: "A family is attacked by demons and only two members survive - Tanjiro and his sister Nezuko, who is turning into a demon slowly. Tanjiro sets out to become a demon slayer to avenge his family and cure his sister."
+            },
+            18: { 
+                title: "TOKYO REVENGERS", 
+                poster: "img/18.jpg",
+                rating: "7.8", 
+                genre: "Action, Drama", 
+                year: "2021",
+                description: "Hanagaki Takemichi lives an unsatisfying life right up until his death. Waking up 12 years in the past, he reckons with the eventual fate of his friends and tries to prevent an unfortunate future."
+            },
+            19: { 
+                title: "ONE PIECE", 
+                poster: "img/19.jpg",
+                rating: "9.0", 
+                genre: "Action, Adventure, Fantasy", 
+                year: "1999",
+                description: "Monkey D. Luffy sets off on an adventure with his pirate crew in hopes of finding the greatest treasure ever, known as the One Piece."
+            },
+            20: { 
+                title: "NARUTO", 
+                poster: "img/20.jpg",
+                rating: "8.4", 
+                genre: "Action, Martial Arts, Teen Comedy", 
+                year: "2002",
+                description: "Naruto Uzumaki, a mischievous adolescent ninja, struggles as he searches for recognition and dreams of becoming the Hokage, the village's leader and strongest ninja."
+            },
+            21: { 
+                title: "DEATH NOTE", 
+                poster: "img/21.jpg",
+                rating: "8.9", 
+                genre: "Adult Animation, Cop Drama, Mystery", 
+                year: "2006-2007",
+                description: "An intelligent high school student goes on a secret crusade to eliminate criminals from the world after discovering a notebook capable of killing anyone whose name is written into it."
+            },
+            22: { 
+                title: "DARK", 
+                poster: "img/23.jpg",
+                rating: "8.7", 
+                genre: "Psychological Thriller, Sci-Fi, Psychological Drama", 
+                year: "2017-2020",
+                description: "A family saga with a supernatural twist, set in a German town where the disappearance of two young children exposes the relationships among four families."
+            },
+        };
+
+        // Get movie ID from URL
+        const params = new URLSearchParams(window.location.search);
+        const movieId = params.get("id");
+
+        if (movies[movieId]) {
+            document.getElementById("movie-title").innerText = movies[movieId].title;
+            document.getElementById("movie-poster").src = movies[movieId].poster;
+            document.getElementById("movie-rating").innerText = `⭐ ${movies[movieId].rating}`;
+            document.getElementById("movie-genre").innerHTML += movies[movieId].genre;
+            document.getElementById("movie-year").innerHTML += movies[movieId].year;
+            document.getElementById("movie-description").innerText = movies[movieId].description;
+        } else {
+            document.getElementById("movie-details").innerHTML = "<p>Movie not found.</p>";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,295 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sen:wght@400..800&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Movie Design</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">MovieVault</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active">Home</li>
+                    <li class="dropdown">
+                        <a href="#">Categories ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#sec1">Genre</a></li>
+                            <li><a href="#">MARVEL</a></li>
+                            <li><a href="#sec2">TV Series</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="search-container">
+                            <input type="text" id="searchInput" placeholder="Search for a movie..." onkeyup="searchMovies()">
+                            <div id="searchResults"></div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="profile-container">
+                <img class="profile-picture" src="img/profile.jpg" alt="">
+                <div class="profile-text-container">
+                    <button id="loginBtn">Login</button>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/f-1.jpg');">
+                <img class="featured-title" src="img/f-t-1.png" alt="">
+                <p class="featured-desc">Explore the Marvel Cinematic Universe. </p>
+                <button class="featured-button" onclick="goToGenre('Marvel')">DETAILS</button>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">RECOMMENDED</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
+                            <span class="movie-list-item-title">INCEPTION</span>
+                            <p class="movie-list-item-desc">A thief who steals corporate secrets through the use of dream-sharing technology...</p>
+                            <button class="movie-list-item-button" onclick="goToDetails(1)">Details</button>
+                            <h4>INCEPTION</h4>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/2.jpg" alt="">
+                            <span class="movie-list-item-title">THE DARK KNIGHT</span>
+                            <p class="movie-list-item-desc">When a menace known as the Joker wreaks havoc and chaos on the ...</p>
+                            <button class="movie-list-item-button" onclick="goToDetails(2)">Details</button>
+                            <h4>INCEPTION</h4>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/3.jpg" alt="">
+                            <span class="movie-list-item-title">INTERSTELLAR</span>
+                            <p class="movie-list-item-desc">When Earth becomes uninhabitable in the future, a farmer and...</p>
+                            <button class="movie-list-item-button" onclick="goToDetails(3)">Details</button>
+                            <h4>INTERSTELLAR</h4>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/4.jpg" alt="">
+                            <span class="movie-list-item-title">PANDIPPADA</span>
+                            <p class="movie-list-item-desc">A financially backward man, who tries out different business plans...</p>
+                            <button class="movie-list-item-button" onclick="goToDetails(4)">Details</button>
+                            <h4>PANDIPPADA</h4>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/5.jpg" alt="">
+                            <span class="movie-list-item-title">LUCIFER</span>
+                            <p class="movie-list-item-desc">A political Godfather dies and a lot of thieves dressed up as polit...</p>
+                            <button class="movie-list-item-button" onclick="goToDetails(5)">Details</button>
+                            <h4>LUCIFER</h4>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/6.jpg" alt="">
+                            <span class="movie-list-item-title">PONMAN</span>
+                            <p class="movie-list-item-desc">Gold dealer Ajesh lends precious sovereigns for a village wedding,...</p>
+                            <button class="movie-list-item-button" onclick="goToDetails(6)">Details</button>
+                            <h4>PONMAN</h4>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/7.jpg" alt="">
+                            <span class="movie-list-item-title">TRAIN TO BUSAN</span>
+                            <p class="movie-list-item-desc">While a zombie virus breaks out in South Korea, passengers struggle ...</p>
+                            <button class="movie-list-item-button" onclick="goToDetails(7)">Details</button>
+                            <h4>TRAIN TO BUSAN</h4>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title" id="sec1">GENRE</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <button class="image-button" onclick="goToGenre('Action')">
+                            <img class="movie-list-item-img" src="img/22.jpg" alt="">
+                            <span class="button-text">ACTION</span>
+                            </button>
+                        </div>
+                        <div class="movie-list-item">
+                            <button class="image-button" onclick="goToGenre('Thriller')">
+                            <img class="movie-list-item-img" src="img/23.jpg" alt="">
+                            <span class="button-text">Thriller</span>
+                            </button>
+                        </div>
+                        <div class="movie-list-item">
+                            <button class="image-button" onclick="goToGenre('Drama')">
+                            <img class="movie-list-item-img" src="img/22.jpg" alt="">
+                            <span class="button-text">Drama</span>
+                            </button>
+                        </div>
+                        <div class="movie-list-item">
+                            <button class="image-button" onclick="goToGenre('Adventure')">
+                            <img class="movie-list-item-img" src="img/23.jpg" alt="">
+                            <span class="button-text">Adventure</span>
+                            </button>
+                        </div>
+                        <div class="movie-list-item">
+                            <button class="image-button" onclick="goToGenre('Crime')">
+                            <img class="movie-list-item-img" src="img/22.jpg" alt="">
+                            <span class="button-text">Crime</span>
+                            </button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/f-2.jpg');">
+                <img class="featured-title" src="img/f-t-2.png" alt="">
+                <p class="featured-desc">A family saga with a supernatural twist, set in a German town wher...</p>
+                <button class="featured-button" onclick="goToDetails(22)">Details</button>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title" id="sec2">TV Series</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/8.jpg" alt="">
+                            <span class="movie-list-item-title">BREAKING BAD</span>
+                            <p class="movie-list-item-desc">A chemistry teacher diagnosed with inoperable lung cancer turns to...</p>
+                            <button class="movie-list-item-button" onclick="goToDetails(8)">Details</button>
+                            <h4>BREAKING BAD</h4>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/9.jpg" alt="">
+                            <span class="movie-list-item-title">CHERNOBYL</span>
+                            <p class="movie-list-item-desc">In April 1986, the city of Chernobyl in the Soviet Union suffers ...</p>
+                            <button class="movie-list-item-button" onclick="goToDetails(9)">Details</button>
+                            <h4>CHERNOBYL</h4>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/10.jpg" alt="">
+                            <span class="movie-list-item-title">GAME OF THRONES</span>
+                            <p class="movie-list-item-desc">Nine noble families fight for control over the lands of Westeros...</p>
+                            <button class="movie-list-item-button" onclick="goToDetails(10)">Details</button>
+                            <h4>GAME OF THRONES</h4>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/11.jpg" alt="">
+                            <span class="movie-list-item-title">ALL OF US ARE DEAD</span>
+                            <p class="movie-list-item-desc">A high school becomes ground zero for a zombie virus outbreak. Tra...</p>
+                            <button class="movie-list-item-button" onclick="goToDetails(11)">Details</button>
+                            <h4>ALL OF US ARE DEAD</h4>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/12.jpg" alt="">
+                            <span class="movie-list-item-title">ALICE IN BORDERLAND</span>
+                            <p class="movie-list-item-desc">Arisu - a listless, jobless and video-game-obsessed young man - s...</p>
+                            <button class="movie-list-item-button" onclick="goToDetails(12)">Details</button>
+                            <h4>ALICE IN BORDERLAND</h4>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/13.jpg" alt="">
+                            <span class="movie-list-item-title">THE WALKING DEAD</span>
+                            <p class="movie-list-item-desc">Sheriff Deputy Rick Grimes wakes up from a coma to learn the world...</p>
+                            <button class="movie-list-item-button" onclick="goToDetails(13)">Details</button>
+                            <h4>THE WALKING DEAD</h4>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/14.jpg" alt="">
+                            <span class="movie-list-item-title">FARZI</span>
+                            <p class="movie-list-item-desc">An artist who gets pulled into the murky high stakes of a con job...</p>
+                            <button class="movie-list-item-button" onclick="goToDetails(14)">Details</button>
+                            <h4>FARZI</h4>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">Anime</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/15.jpg" alt="">
+                            <span class="movie-list-item-title">SOLO LEVELING</span>
+                            <p class="movie-list-item-desc">Follows the adventures of Sung Jinwoo in a world that is constantly...</p>
+                            <button class="movie-list-item-button" onclick="goToDetails(15)">Details</button>
+                            <h4>SOLO LEVELING</h4>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/16.jpg" alt="">
+                            <span class="movie-list-item-title">ATTACK ON TITANS</span>
+                            <p class="movie-list-item-desc">After his hometown is destroyed, young Eren Jaeger vows to...</p>
+                            <button class="movie-list-item-button" onclick="goToDetails(16)">Details</button>
+                            <h4>ATTACK ON TITANS</h4>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/17.jpg" alt="">
+                            <span class="movie-list-item-title">DEMON SLAYER</span>
+                            <p class="movie-list-item-desc">A family is attacked by demons and only two members survive - Tan...</p>
+                            <button class="movie-list-item-button" onclick="goToDetails(17)">Details</button>
+                            <h4>DEMON SLAYER</h4>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/18.jpg" alt="">
+                            <span class="movie-list-item-title">TOKYO REVENGERS</span>
+                            <p class="movie-list-item-desc">Hanagaki Takemichi lives an unsatisfying life right up until his ...</p>
+                            <button class="movie-list-item-button" onclick="goToDetails(18)">Details</button>
+                            <h4>TOKYO REVENGERS</h4>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/19.jpg" alt="">
+                            <span class="movie-list-item-title">ONE PIECE</span>
+                            <p class="movie-list-item-desc">Monkey D. Luffy sets off on an adventure with his pirate crew in ...</p>
+                            <button class="movie-list-item-button" onclick="goToDetails(19)">Details</button>
+                            <h4>ONE PIECE</h4>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/20.jpg" alt="">
+                            <span class="movie-list-item-title">NARUTO</span>
+                            <p class="movie-list-item-desc">Naruto Uzumaki, a mischievous adolescent ninja, struggles as he ...</p>
+                            <button class="movie-list-item-button" onclick="goToDetails(20)">Details</button>
+                            <h4>NARUTO</h4>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/21.jpg" alt="">
+                            <span class="movie-list-item-title">DEATH NOTE</span>
+                            <p class="movie-list-item-desc">An intelligent high school student goes on a secret crusade to eli...</p>
+                            <button class="movie-list-item-button" onclick="goToDetails(21)">Details</button>
+                            <h4>DEATH NOTE</h4>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="group-tab">
+        <p>&copy; 2025 MovieVault | Group Members:</p>
+        <p>
+            <a href="https://linkedin.com/in/alice" target="_blank">Pranav C P</a> |
+            <a href="https://linkedin.com/in/bob" target="_blank">Midhun C</a> |
+            <a href="https://linkedin.com/in/charlie" target="_blank">Shafin P</a> |
+            <a href="https://linkedin.com/in/dave" target="_blank">Aparna Ravikumar K</a> |
+            <a href="https://linkedin.com/in/dave" target="_blank">Nandhana Gopinath</a> |
+            <a href="https://linkedin.com/in/dave" target="_blank">Sriya K</a> |
+            <a href="https://linkedin.com/in/dave" target="_blank">Gowri Suresh</a>
+        </p>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+
+</html>
