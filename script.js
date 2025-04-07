@@ -19,7 +19,7 @@ const movies = {
   {
     title: "Drishyam",
     poster: "img/t3.jpg",
-    rating: "8.2"
+    rating: "8.3"
   },
   {
     title: "Shutter Island",
@@ -53,7 +53,7 @@ const movies = {
   },
   {
     title: "Inception",
-    poster: "img/t10.jpg",
+    poster: "img/1.jpg",
     rating: "8.8"
   }
 ],
