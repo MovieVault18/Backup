@@ -398,3 +398,64 @@ body {
 .logged-in {
   background-color: #2ed573;
 }
+
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.movie-card {
+    position: relative;
+    width: 220px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #222;
+    transition: transform 0.3s ease-in-out;
+}
+
+.movie-card:hover {
+    transform: scale(1.1);
+}
+
+.movie-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.movie-info {
+    padding: 10px;
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.movie-card:hover .movie-info {
+    display: block;
+}
+
+.movie-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.movie-desc {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.movie-button {
+    display: block;
+    margin: 10px auto;
+    padding: 8px 12px;
+    background-color: #ff9900;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
