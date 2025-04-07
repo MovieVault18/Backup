@@ -107,7 +107,8 @@ body {
 }
 
 .featured-title {
-  width: 200px;
+  background-size: cover; /* or contain */
+  background-repeat: no-repeat;
 }
 
 .featured-desc {
