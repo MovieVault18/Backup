@@ -447,18 +447,19 @@ body {
     color: black;
 }
 
-.suggestion {
+.search-item {
     padding: 10px;
     cursor: pointer;
-    color: black;  
-    background: white; 
-    border-bottom: 1px solid #ddd; 
+    color: black !important;  /* Ensure text is black */
+    background: white;
+    border-bottom: 1px solid #ddd;
 }
 
-.suggestion:hover {
+.search-item:hover {
     background: #f0f0f0;
-    color: black; 
+    color: black !important;
 }
-#suggestions-box, #suggestions-box .suggestion {
+
+#suggestions-box {
     color: black !important;
 }
