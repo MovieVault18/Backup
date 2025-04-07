@@ -444,6 +444,7 @@ body {
     display: none;
     max-height: 150px;
     overflow-y: auto;
+    color: black;
 }
 
 .suggestion {
