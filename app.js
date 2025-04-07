@@ -35,7 +35,7 @@ ball.addEventListener("click", () => {
 });
 
 function goToDetails(movieName) {
-    window.location.href = `preset.html?id=${encodeURIComponent(movieName)}`;
+    window.location.href = `details.html?name=${encodeURIComponent(movieName)}`;
 }
 
 
