@@ -34,9 +34,9 @@ ball.addEventListener("click", () => {
   ball.classList.toggle("active");
 });
 
-function goToDetails(movieName) {
-    window.location.href = `details.html?name=${encodeURIComponent(movieName)}`;
-}
+function showMovieDetails(movieNumber) {
+            window.location.href = `movie.html?movie=${movieNumber}`;
+        }
 
 
 function goToGenre(genre) {
