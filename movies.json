@@ -141,8 +141,102 @@
   { "name": "Kaithi", "poster": "img/t9.jpg", "rating": "8.4", "genre1": "Thriller", "genre2": "Action", "description": "A convict is released from prison and caught in a web of violence and crime when he is asked to help the police during an emergency.", "year": "2019" 
   }, 
   { "name": "Inception", "poster": "img/1.jpg", "rating": "8.8", "genre1": "Thriller", "genre2": "Sci-Fi", "description": "A skilled thief who enters people's dreams to steal secrets is given a chance to erase his criminal record by planting an idea in someone’s mind.", "year": "2010" 
-  } 
+  },
+{ "name": "Kilukkam", "poster": "img/c1.jpg", "rating": "8.7", "genre1": "Comedy", "genre2": "Drama", "description": "A tourist guide in Ooty shelters a mentally unstable woman in return for the reward offered by her relatives. Later, he comes to know that she is in danger from her relatives.", "year": "1991" },
+
+{
+    "name": "Chennai Express",
+    "poster": "img/c2.jpg",
+    "rating": "6.2",
+    "genre1": "Comedy",
+    "genre2": "Romance",
+    "description": "A man travelling to Rameswaram via Chennai express for his late grandfather's ashes immersion finds himself in trouble after helping a don's daughter and her cousins board the train.",
+    "year": "2013"
+},
+
+{
+    "name": "Falimy",
+    "poster": "img/c3.jpg",
+    "rating": "7.3",
+    "genre1": "Comedy",
+    "genre2": "Drama",
+    "description": "A family of self-centered individuals sets out on a journey to fulfill their grandfather's pilgrimage wish, partly to prevent his frequent escapes and partly to find a distraction from their personal problems.",
+    "year": "2023"
+},
+
+{
+    "name": "Vettam",
+    "poster": "img/c4.jpg",
+    "rating": "7.2",
+    "genre1": "Comedy",
+    "genre2": "Romance",
+    "description": "As Gopalakrishnan attempts to smuggle an expensive necklace, he crosses paths with a woman looking for her fiancé.",
+    "year": "2004"
+},
+
+{
+    "name": "3 Idiots",
+    "poster": "img/c5.jpg",
+    "rating": "8.4",
+    "genre1": "Comedy",
+    "genre2": "Drama",
+    "description": "Two friends are searching for their long lost companion. They revisit their college days and recall the memories of their friend who inspired them to think differently, even as the rest of the world called them 'idiots'.",
+    "year": "2009"
+},
+
+{
+    "name": "Good Night",
+    "poster": "img/c6.jpg",
+    "rating": "7.7",
+    "genre1": "Comedy",
+    "genre2": "Romance",
+    "description": "A simple boy-next-door whose biggest problem in life is his snoring, falls in love with a girl. Follow how the couple overcome his sleeping problem while living together.",
+    "year": "2023"
+},
+
+{
+    "name": "Love Today",
+    "poster": "img/c7.jpg",
+    "rating": "8.0",
+    "genre1": "Comedy",
+    "genre2": "Romance",
+    "description": "Two young lovers, who are made to exchange their phones for a day and what happens due to that.",
+    "year": "2022"
+},
+
+{
+    "name": "Dragon",
+    "poster": "img/c8.jpg",
+    "rating": "8.0",
+    "genre1": "Comedy",
+    "genre2": "Drama",
+    "description": "After a devastating breakup, troubled student Ragavan abandons his studies and enters the dangerous world of financial fraud, pursuing wealth and power while becoming entangled in escalating deception.",
+    "year": "2025"
+},
+
+{
+    "name": "Stree",
+    "poster": "img/c9.jpg",
+    "rating": "7.5",
+    "genre1": "Comedy",
+    "genre2": "Horror",
+    "description": "In the small town of Chanderi, the menfolk live in fear of an evil spirit named 'Stree' who abducts men in the night.",
+    "year": "2018"
+},
+
+{
+    "name": "C.I.D. Moosa",
+    "poster": "img/c10.jpg",
+    "rating": "8.0",
+    "genre1": "Comedy",
+    "genre2": "Action",
+    "description": "The adventures of a private detective, Moosa, whose luck and wit help him to solve the cases.",
+    "year": "2003"
+}
+
 ]
+
+  
 
   
 
