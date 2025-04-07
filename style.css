@@ -463,13 +463,3 @@ body {
 #suggestions-box {
     color: black !important;
 }
-
-  button {
-    position: fixed !important;
-    top: 50px !important;
-    left: 50px !important;
-    z-index: 9999999 !important;
-    background: red !important;
-    width: 200px !important;
-    height: 100px !important;
-  }
