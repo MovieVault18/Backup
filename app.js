@@ -34,53 +34,9 @@ ball.addEventListener("click", () => {
   ball.classList.toggle("active");
 });
 
-function goToDetails(movieId) {
-  window.location.href = `details.html?id=${movieId}`;
-}
 
 function goToGenre(genre) {
   window.location.href = `genre.html?genre=${genre}`;
-}
-
-let movies = [
-  { name: "Inception", id: 1 },
-  { name: "Interstellar", id: 2 },
-  { name: "The Dark Knight", id: 3 }
-];
-
-function searchMovies() {
-  let input = document.getElementById("searchInput").value.toLowerCase();
-  let resultsDiv = document.getElementById("searchResults");
-  resultsDiv.innerHTML = ""; // Clear previous results
-
-  console.log("Search input:", input); // Debugging
-
-  if (input.trim() === "") {
-      resultsDiv.style.display = "none"; // Hide results if empty
-      return;
-  }
-
-  let filteredMovies = movies.filter(movie => movie.name.toLowerCase().includes(input));
-
-  console.log("Filtered Movies:", filteredMovies); // Debugging
-
-  if (filteredMovies.length === 0) {
-      resultsDiv.innerHTML = "<p class='no-results'>No results found</p>";
-      resultsDiv.style.display = "block";
-      return;
-  }
-
-  filteredMovies.forEach(movie => {
-      let movieItem = document.createElement("div");
-      movieItem.textContent = movie.name;
-      movieItem.classList.add("search-result");
-      movieItem.onclick = function () {
-          goToDetails(movie.id); // Calls function to open detail.html
-      };
-      resultsDiv.appendChild(movieItem);
-  });
-
-  resultsDiv.style.display = "block"; // Ensure results are shown
 }
 
 
@@ -146,5 +102,35 @@ function storeMovie(movieName) {
         .then(movies => {
             let selectedMovie = movies.find(movie => movie.name === movieName);
             localStorage.setItem("selectedMovie", JSON.stringify(selectedMovie));
+        });
+}
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    fetch("movies.json")
+        .then(response => response.json())
+        .then(movies => {
+            let datalist = document.getElementById("movie-list");
+            movies.forEach(movie => {
+                let option = document.createElement("option");
+                option.value = movie.name;
+                datalist.appendChild(option);
+            });
+        });
+});
+
+function searchMovie() {
+    let searchQuery = document.getElementById("search-bar").value.toLowerCase();
+
+    fetch("movies.json")
+        .then(response => response.json())
+        .then(movies => {
+            let foundMovie = movies.find(movie => movie.name.toLowerCase() === searchQuery);
+            if (foundMovie) {
+                localStorage.setItem("selectedMovie", JSON.stringify(foundMovie));
+                window.location.href = "details.html";
+            } else {
+                alert("Movie not found!");
+            }
         });
 }
