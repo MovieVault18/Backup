@@ -13,10 +13,58 @@ const movies = {
         { title: "The Shawshank Redemption", poster: "shawshank.jpg", rating: "9.3" },
         { title: "Forrest Gump", poster: "forrestgump.jpg", rating: "8.8" }
     ],
-    Adventure: [
-        { title: "Pirates of the Caribbean", poster: "pirates.jpg", rating: "8.0" },
-        { title: "The Lord of the Rings", poster: "lotr.jpg", rating: "9.0" }
-    ],
+    Adventure:[
+  {
+    title: "THE ELECTRIC STATE",
+    poster: "img/ad1.jpg",
+    rating: "5.9"
+  },
+  {
+    title: "MICKEY 17",
+    poster: "img/ad2.jpg",
+    rating: "7.0"
+  },
+  {
+    title: "INTERSTELLAR",
+    poster: "img/3.jpg",
+    rating: "8.7"
+  },
+  {
+    title: "SHAZAM! FURY OF THE GODS",
+    poster: "img/ad4.jpg",
+    rating: "5.9"
+  },
+  {
+    title: "CAPTAIN AMERICA: BRAVE NEW WORLD",
+    poster: "img/ad5.jpg",
+    rating: "5.9"
+  },
+  {
+    title: "Twisters",
+    poster: "img/ad6.jpg",
+    rating: "6.5"
+  },
+  {
+    title: "Gladiator II",
+    poster: "img/ad7.jpg",
+    rating: "6.5"
+  },
+  {
+    title: "Venom: The Last Dance",
+    poster: "img/ad8.jpg",
+    rating: "6.0"
+  },
+  {
+    title: "The Hunger Games",
+    poster: "img/ad9.jpg",
+    rating: "7.2"
+  },
+  {
+    title: "Avengers: Endgame",
+    poster: "img/m8.jpg",
+    rating: "8.4"
+  }
+],
     Crime: [
         { title: "Pirates of the Caribbean", poster: "pirates.jpg", rating: "8.0" },
         { title: "The Lord of the Rings", poster: "lotr.jpg", rating: "9.0" }
