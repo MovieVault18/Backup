@@ -34,8 +34,8 @@ ball.addEventListener("click", () => {
   ball.classList.toggle("active");
 });
 
-function goToPreset(movieName) {
-    window.location.href = `preset.html?movieId=${movieName}`;
+function goToDetails(movieName) {
+    window.location.href = `preset.html?id=${encodeURIComponent(movieName)}`;
 }
 
 
