@@ -448,8 +448,12 @@ body {
 .suggestion {
     padding: 10px;
     cursor: pointer;
+    color: black;  
+    background: white; 
+    border-bottom: 1px solid #ddd; 
 }
 
 .suggestion:hover {
     background: #f0f0f0;
+    color: black; 
 }
