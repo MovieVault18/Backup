@@ -57,10 +57,58 @@ const movies = {
     rating: "8.8"
   }
 ],
-    Drama: [
-        { title: "The Shawshank Redemption", poster: "shawshank.jpg", rating: "9.3" },
-        { title: "Forrest Gump", poster: "forrestgump.jpg", rating: "8.8" }
-    ],
+    Comedy: [
+  {
+    "title": "Kilukkam",
+    "poster": "img/c1.jpg",
+    "rating": "8.7"
+  },
+  {
+    "title": "Chennai Express",
+    "poster": "img/c2.jpg",
+    "rating": "6.2"
+  },
+  {
+    "title": "Falimy",
+    "poster": "img/c3.jpg",
+    "rating": "7.3"
+  },
+  {
+    "title": "Vettam",
+    "poster": "img/c4.jpg",
+    "rating": "7.2"
+  },
+  {
+    "title": "3 Idiots",
+    "poster": "img/c5.jpg",
+    "rating": "8.4"
+  },
+  {
+    "title": "Good Night",
+    "poster": "img/c6.jpg",
+    "rating": "7.7"
+  },
+  {
+    "title": "Love Today",
+    "poster": "img/c7.jpg",
+    "rating": "8.0"
+  },
+  {
+    "title": "Dragon",
+    "poster": "img/c8.jpg",
+    "rating": "8.0"
+  },
+  {
+    "title": "Stree",
+    "poster": "img/c9.jpg",
+    "rating": "7.5"
+  },
+  {
+    "title": "C.I.D. Moosa",
+    "poster": "img/c10.jpg",
+    "rating": "8.0"
+  }
+],
     Adventure:[
   {
     title: "THE ELECTRIC STATE",
