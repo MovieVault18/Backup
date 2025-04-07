@@ -34,11 +34,10 @@ ball.addEventListener("click", () => {
   ball.classList.toggle("active");
 });
 
-
-function gotopreset(movieId) {
-    alert("Navigating to preset.html with ID: " + movieId); // Debugging
-    window.location.href = `preset.html?id=${movieId}`;
+function goToGenre(id) {
+  window.location.href = `preset.html?id=${id}`;
 }
+
 
 function goToGenre(genre) {
   window.location.href = `genre.html?genre=${genre}`;
