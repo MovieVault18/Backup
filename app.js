@@ -106,18 +106,17 @@ function storeMovie(movieName) {
 }
 
 
-document.addEventListener("DOMContentLoaded", () => {
-    fetch("movies.json")
-        .then(response => response.json())
-        .then(movies => {
-            let datalist = document.getElementById("movie-list");
-            movies.forEach(movie => {
-                let option = document.createElement("option");
-                option.value = movie.name;
-                datalist.appendChild(option);
-            });
+fetch("movies.json")
+    .then(response => response.json())
+    .then(movies => {
+        let datalist = document.getElementById("movie-list");
+        movies.forEach(movie => {
+            let option = document.createElement("option");
+            option.value = movie.name;
+            datalist.appendChild(option);
         });
-});
+    })
+    .catch(error => console.error("Error fetching movie data:", error));
 
 function searchMovie() {
     let searchQuery = document.getElementById("search-bar").value.toLowerCase();
@@ -132,5 +131,6 @@ function searchMovie() {
             } else {
                 alert("Movie not found!");
             }
-        });
+        })
+        .catch(error => console.error("Error searching for movie:", error));
 }
