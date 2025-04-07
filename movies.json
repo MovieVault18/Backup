@@ -126,7 +126,7 @@
   },
   { "name": "Kahaani", "poster": "img/t2.jpg", "rating": "8.1", "genre1": "Thriller", "genre2": "Drama", "description": "A pregnant woman travels to Kolkata to find her missing husband, only to uncover shocking truths about his disappearance.", "year": "2012" 
   },
-  { "name": "Drishyam", "poster": "img/t3.jpg", "rating": "8.2", "genre1": "Thriller", "genre2": "Crime", "description": "A man goes to great lengths to protect his family when they become involved in a crime, only to face a complex investigation.", "year": "2015" 
+  { "name": "Drishyam", "poster": "img/t3.jpg", "rating": "8.3", "genre1": "Thriller", "genre2": "Crime", "description": "A man goes to great lengths to protect his family when they become involved in a crime, only to face a complex investigation.", "year": "2013" 
   }, 
   { "name": "Shutter Island", "poster": "img/t4.jpg", "rating": "8.2", "genre1": "Thriller", "genre2": "Mystery", "description": "A U.S. Marshal investigates the disappearance of a patient from a mental institution, uncovering shocking truths.", "year": "2010" 
   }, 
@@ -140,7 +140,7 @@
   }, 
   { "name": "Kaithi", "poster": "img/t9.jpg", "rating": "8.4", "genre1": "Thriller", "genre2": "Action", "description": "A convict is released from prison and caught in a web of violence and crime when he is asked to help the police during an emergency.", "year": "2019" 
   }, 
-  { "name": "Inception", "poster": "img/t10.jpg", "rating": "8.8", "genre1": "Thriller", "genre2": "Sci-Fi", "description": "A skilled thief who enters people's dreams to steal secrets is given a chance to erase his criminal record by planting an idea in someone’s mind.", "year": "2010" 
+  { "name": "Inception", "poster": "img/1.jpg", "rating": "8.8", "genre1": "Thriller", "genre2": "Sci-Fi", "description": "A skilled thief who enters people's dreams to steal secrets is given a chance to erase his criminal record by planting an idea in someone’s mind.", "year": "2010" 
   } 
 ]
 
