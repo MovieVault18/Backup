@@ -35,10 +35,10 @@ ball.addEventListener("click", () => {
 });
 
 
-function goToPreset(movieId) {
+function gotopreset(movieId) {
+    alert("Navigating to preset.html with ID: " + movieId); // Debugging
     window.location.href = `preset.html?id=${movieId}`;
 }
-
 
 function goToGenre(genre) {
   window.location.href = `genre.html?genre=${genre}`;
