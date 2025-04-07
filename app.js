@@ -136,7 +136,7 @@ function showSuggestions() {
 
     filteredMovies.forEach(movie => {
         let suggestionItem = document.createElement("div");
-        suggestionItem.classList.add("suggestion");
+        suggestionItem.classList.add("search-item");  // Updated class name
         suggestionItem.textContent = movie.name;
         suggestionItem.onclick = function() {
             document.getElementById("search-bar").value = movie.name;
