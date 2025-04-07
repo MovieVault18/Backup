@@ -35,8 +35,8 @@ ball.addEventListener("click", () => {
 });
 
 
-function goToPreset(preset) {
-  window.location.href = `preset.html?id=${preset}`;
+function gotopreset(movieId) {
+    window.location.href = `preset.html?id=${String(movieId)}`;
 }
 
 
