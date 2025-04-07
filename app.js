@@ -35,6 +35,11 @@ ball.addEventListener("click", () => {
 });
 
 
+function goToPreset(preset) {
+  window.location.href = `preset.html?genre=${preset}`;
+}
+
+
 function goToGenre(genre) {
   window.location.href = `genre.html?genre=${genre}`;
 }
