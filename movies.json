@@ -232,10 +232,97 @@
     "genre2": "Action",
     "description": "The adventures of a private detective, Moosa, whose luck and wit help him to solve the cases.",
     "year": "2003"
-}
-
+}, {
+        "name": "The Terminator",
+        "poster": "img/ac1.jpg",
+        "rating": "8.1",
+        "genre1": "Action",
+        "genre2": "Sci-Fi",
+        "description": "A cyborg assassin from the future attempts to find and kill a young woman who is destined to give birth to a warrior that will lead a resistance to save humankind from extinction.",
+        "year": "1984"
+    },
+    {
+        "name": "Terminator 2: Judgement Day",
+        "poster": "img/ac2.jpg",
+        "rating": "8.6",
+        "genre1": "Action",
+        "genre2": "Sci-Fi",
+        "description": "A cyborg, identical to the one who failed to kill Sarah Connor, must now protect her ten-year-old son John from an even more advanced and powerful cyborg.",
+        "year": "1991"
+    },
+    {
+        "name": "The Matrix",
+        "poster": "img/ac3.jpg",
+        "rating": "8.7",
+        "genre1": "Action",
+        "genre2": "Sci-Fi",
+        "description": "When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth—the life he knows is the elaborate deception of an evil cyber-intelligence.",
+        "year": "1999"
+    },
+    {
+        "name": "John Wick",
+        "poster": "img/ac4.jpg",
+        "rating": "7.5",
+        "genre1": "Action",
+        "genre2": "Thriller",
+        "description": "John Wick is a former hitman grieving the loss of his true love. When his home is broken into, robbed, and his dog killed, he is forced to return to action to exact revenge.",
+        "year": "2014"
+    },
+    {
+        "name": "Gladiator",
+        "poster": "img/ac5.jpg",
+        "rating": "8.5",
+        "genre1": "Action",
+        "genre2": "Adventure",
+        "description": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
+        "year": "2000"
+    },
+    {
+        "name": "Dhoom",
+        "poster": "img/ac6.jpg",
+        "rating": "6.6",
+        "genre1": "Action",
+        "genre2": "Thriller",
+        "description": "A gang of bikers are on a robbing spree and infuse terror in the city. In order to nab the perpetrators, ACP Jai teams up with Ali, a mechanic.",
+        "year": "2004"
+    },
+    {
+        "name": "Shershaah",
+        "poster": "img/ac7.jpg",
+        "rating": "8.3",
+        "genre1": "Action",
+        "genre2": "Biography",
+        "description": "Shershaah is the story of PVC awardee Indian soldier Capt. Vikram Batra, whose bravery and unflinching courage in chasing the Pakistani soldiers out of Indian territory contributed immensely in India finally winning the Kargil War in 1999.",
+        "year": "2021"
+    },
+    {
+        "name": "Dangal",
+        "poster": "img/ac8.jpg",
+        "rating": "8.3",
+        "genre1": "Action",
+        "genre2": "Sport",
+        "description": "Mahavir Singh Phogat, a former wrestler, decides to fulfill his dream of winning a gold medal for his country by training his daughters for the Commonwealth Games.",
+        "year": "2016"
+    },
+    {
+        "name": "Lucifer",
+        "poster": "img/5.jpg",
+        "rating": "7.5",
+        "genre1": "Action",
+        "genre2": "Thriller",
+        "description": "A major power struggle occurs when the leader of a political party passes away. In the midst of the chaos, a mysterious man named Stephen steps in to ascend the throne.",
+        "year": "2019"
+    },
+    {
+        "name": "Marco",
+        "poster": "img/ac10.jpg",
+        "rating": "6.9",
+        "genre1": "Action",
+        "genre2": "Thriller",
+        "description": "The adoptive son of the Adattu family, Marco, sets off on a ruthless quest for vengeance after his brother is brutally murdered.",
+        "year": "2024"
+    }
 ]
-
   
 
   
