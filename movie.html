@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .movie-container {
+            max-width: 900px;
+            background-color: #222;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+            margin-top: 20px;
+        }
+        .movie-header {
+            display: flex;
+            align-items: flex-start;
+        }
+        .movie-poster {
+            width: 250px;
+            height: auto;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .movie-details {
+            flex: 1;
+        }
+        .movie-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #f5c518;
+        }
+        .movie-info {
+            font-size: 16px;
+            color: #bbb;
+            margin: 5px 0;
+        }
+        .movie-description {
+            margin-top: 15px;
+            line-height: 1.6;
+            color: #ddd;
+        }
+        .rating-box {
+            display: inline-block;
+            background-color: #f5c518;
+            color: #000;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .cast {
+            margin-top: 20px;
+        }
+        .cast h3 {
+            color: #f5c518;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .cast-list {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .cast-item {
+            background-color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            width: 120px;
+        }
+        .cast-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .cast-name {
+            font-size: 14px;
+            color: #ddd;
+            margin-top: 5px;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const movieNumber = urlParams.get('movie');
+
+            const movies = {
+                1: {
+                    title: "Inception",
+                    description: "A thief who enters the dreams of others to steal secrets.",
+                    rating: "8.8",
+                    genre: "Sci-Fi",
+                    year: "2010",
+                    director: "Christopher Nolan",
+                    poster: "img/inception.jpg",
+                    cast: [
+                        { name: "Leonardo DiCaprio", img: "img/leonardo.jpg" },
+                        { name: "Joseph Gordon-Levitt", img: "img/joseph.jpg" },
+                        { name: "Elliot Page", img: "img/elliot.jpg" }
+                    ]
+                },
+                2: {
+                    title: "The Godfather",
+                    description: "The aging patriarch of an organized crime dynasty transfers control to his reluctant son.",
+                    rating: "9.2",
+                    genre: "Crime",
+                    year: "1972",
+                    director: "Francis Ford Coppola",
+                    poster: "img/godfather.jpg",
+                    cast: [
+                        { name: "Marlon Brando", img: "img/brando.jpg" },
+                        { name: "Al Pacino", img: "img/pacino.jpg" },
+                        { name: "James Caan", img: "img/caan.jpg" }
+                    ]
+                }
+            };
+
+            const movie = movies[movieNumber];
+
+            if (movie) {
+                document.getElementById("movie-poster").src = movie.poster;
+                document.getElementById("movie-title").innerText = movie.title;
+                document.getElementById("movie-rating").innerText = movie.rating;
+                document.getElementById("movie-genre").innerText = 'Genre: ' + movie.genre;
+                document.getElementById("movie-year").innerText = 'Year: ' + movie.year;
+                document.getElementById("movie-description").innerText = movie.description;
+                document.getElementById("movie-director").innerText = 'Director: ' + movie.director;
+
+                let castHtml = '';
+                movie.cast.forEach(actor => {
+                    castHtml += `<div class="cast-item">
+                        <img src="${actor.img}" alt="${actor.name}">
+                        <div class="cast-name">${actor.name}</div>
+                    </div>`;
+                });
+                document.getElementById("movie-cast").innerHTML = castHtml;
+            } else {
+                document.querySelector(".movie-container").innerHTML = '<p>Movie not found.</p>';
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="movie-container">
+        <div class="movie-header">
+            <img id="movie-poster" class="movie-poster" src="" alt="Movie Poster">
+            <div class="movie-details">
+                <h1 id="movie-title" class="movie-title"></h1>
+                <div class="rating-box" id="movie-rating"></div>
+                <p id="movie-genre" class="movie-info"></p>
+                <p id="movie-year" class="movie-info"></p>
+                <p id="movie-director" class="movie-info"></p>
+                <p id="movie-description" class="movie-description"></p>
+            </div>
+        </div>
+        <div class="cast">
+            <h3>Cast</h3>
+            <div id="movie-cast" class="cast-list"></div>
+        </div>
+    </div>
+</body>
+</html>
