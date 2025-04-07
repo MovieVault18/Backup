@@ -106,31 +106,56 @@ function storeMovie(movieName) {
 }
 
 
+let moviesData = [];
+
 fetch("movies.json")
     .then(response => response.json())
     .then(movies => {
-        let datalist = document.getElementById("movie-list");
-        movies.forEach(movie => {
-            let option = document.createElement("option");
-            option.value = movie.name;
-            datalist.appendChild(option);
-        });
+        moviesData = movies;
     })
     .catch(error => console.error("Error fetching movie data:", error));
 
+function showSuggestions() {
+    let searchQuery = document.getElementById("search-bar").value.toLowerCase();
+    let suggestionsBox = document.getElementById("suggestions-box");
+    suggestionsBox.innerHTML = ""; 
+
+    if (searchQuery === "") {
+        suggestionsBox.style.display = "none";
+        return;
+    }
+
+    let filteredMovies = moviesData.filter(movie => 
+        movie.name.toLowerCase().includes(searchQuery)
+    );
+
+    if (filteredMovies.length === 0) {
+        suggestionsBox.style.display = "none";
+        return;
+    }
+
+    filteredMovies.forEach(movie => {
+        let suggestionItem = document.createElement("div");
+        suggestionItem.classList.add("suggestion");
+        suggestionItem.textContent = movie.name;
+        suggestionItem.onclick = function() {
+            document.getElementById("search-bar").value = movie.name;
+            suggestionsBox.style.display = "none";
+        };
+        suggestionsBox.appendChild(suggestionItem);
+    });
+
+    suggestionsBox.style.display = "block";
+}
+
 function searchMovie() {
     let searchQuery = document.getElementById("search-bar").value.toLowerCase();
+    let foundMovie = moviesData.find(movie => movie.name.toLowerCase() === searchQuery);
 
-    fetch("movies.json")
-        .then(response => response.json())
-        .then(movies => {
-            let foundMovie = movies.find(movie => movie.name.toLowerCase() === searchQuery);
-            if (foundMovie) {
-                localStorage.setItem("selectedMovie", JSON.stringify(foundMovie));
-                window.location.href = "details.html";
-            } else {
-                alert("Movie not found!");
-            }
-        })
-        .catch(error => console.error("Error searching for movie:", error));
+    if (foundMovie) {
+        localStorage.setItem("selectedMovie", JSON.stringify(foundMovie));
+        window.location.href = "details.html";
+    } else {
+        alert("Movie not found!");
+    }
 }
