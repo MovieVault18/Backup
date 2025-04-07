@@ -2,7 +2,7 @@
 [
   {
     "name": "Captain America",
-    "poster": "img/1.jpg",
+    "poster": "img/m1.jpg",
     "rating": "6.9",
     "genre1": "Sci-Fi Epic",
     "genre2": "",
@@ -11,7 +11,7 @@
   },
   {
     "name": "Captain Marvel",
-    "poster": "img/2.jpg",
+    "poster": "img/m2.jpg",
     "rating": "6.8",
     "genre1": "Quest",
     "genre2": "Action",
@@ -20,7 +20,7 @@
   },
   {
     "name": "Iron Man",
-    "poster": "img/9.jpg",
+    "poster": "img/m3.jpg",
     "rating": "7.9",
     "genre1": "Sci-Fi",
     "genre2": "Superhero",
@@ -29,7 +29,7 @@
   },
   {
     "name": "The Incredible Hulk",
-    "poster": "img/9.jpg",
+    "poster": "img/m4.jpg",
     "rating": "6.6",
     "genre1": "Adventure",
     "genre2": "Action",
@@ -38,7 +38,7 @@
   },
   {
     "name": "Thor",
-    "poster": "img/9.jpg",
+    "poster": "img/m5.jpg",
     "rating": "7.0",
     "genre1": "Supernatural Fantasy",
     "genre2": "",
@@ -47,7 +47,7 @@
   },
   {
     "name": "The Avengers",
-    "poster": "img/9.jpg",
+    "poster": "img/m6.jpg",
     "rating": "8.0",
     "genre1": "Action Epic",
     "genre2": "Alien Invasion",
@@ -56,7 +56,7 @@
   },
   {
     "name": "Spider-Man: Far From Home",
-    "poster": "img/9.jpg",
+    "poster": "img/m7.jpg",
     "rating": "7.4",
     "genre1": "Superhero",
     "genre2": "",
@@ -65,7 +65,7 @@
   },
   {
     "name": "Avengers: Endgame",
-    "poster": "img/9.jpg",
+    "poster": "img/m8.jpg",
     "rating": "8.4",
     "genre1": "Space Sci-Fi",
     "genre2": "",
@@ -74,7 +74,7 @@
   },
   {
     "name": "Thor: The Dark World",
-    "poster": "img/9.jpg",
+    "poster": "img/m9.jpg",
     "rating": "6.7",
     "genre1": "Action",
     "genre2": "Fantasy",
@@ -83,7 +83,7 @@
   },
   {
     "name": "Captain America: The Winter Soldier",
-    "poster": "img/9.jpg",
+    "poster": "img/m10.jpg",
     "rating": "7.7",
     "genre1": "Conspiracy Thriller",
     "genre2": "",
