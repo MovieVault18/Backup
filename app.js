@@ -105,3 +105,41 @@ window.onload = function () {
       });
   }
 };
+let movies = [];
+
+function loadMovies() {
+    fetch('movies.json')
+        .then(response => response.json())
+        .then(data => {
+            movies = data;
+            assignRandomMovies();
+        })
+        .catch(error => console.error('Error loading JSON:', error));
+}
+
+function assignRandomMovies() {
+    let movieElements = document.querySelectorAll('.movie-list-item');
+    let usedIndexes = new Set();
+
+    movieElements.forEach((movieElement) => {
+        let randomIndex;
+        do {
+            randomIndex = Math.floor(Math.random() * movies.length);
+        } while (usedIndexes.has(randomIndex)); // Ensure no repetition
+        usedIndexes.add(randomIndex);
+
+        let movie = movies[randomIndex];
+
+        movieElement.querySelector('.movie-list-item-img').src = `img/${movie.poster}`;
+        movieElement.querySelector('.movie-list-item-title').textContent = movie.name;
+        movieElement.querySelector('.movie-list-item-desc').textContent = movie.description;
+
+        // Set up button click to save data and go to details page
+        movieElement.querySelector('.movie-list-item-button').addEventListener('click', () => {
+            localStorage.setItem('selectedMovie', JSON.stringify(movie));
+            window.location.href = 'details.html';
+        });
+    });
+}
+
+loadMovies();
