@@ -432,6 +432,7 @@ body {
     position: relative;
     display: inline-block;
     color: black;
+    padding-left: 10px;
 }
 
 #suggestions-box {
