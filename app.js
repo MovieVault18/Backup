@@ -105,41 +105,46 @@ window.onload = function () {
       });
   }
 };
-let movies = [];
 
-function loadMovies() {
-    fetch('movies.json')
+
+document.addEventListener("DOMContentLoaded", () => {
+    fetch("movies.json")
         .then(response => response.json())
-        .then(data => {
-            movies = data;
-            assignRandomMovies();
-        })
-        .catch(error => console.error('Error loading JSON:', error));
-}
+        .then(movies => {
+            let movieContainer = document.querySelector(".movie-container");
+            let usedIndexes = new Set();
 
-function assignRandomMovies() {
-    let movieElements = document.querySelectorAll('.movie-list-item');
-    let usedIndexes = new Set();
+            for (let i = 0; i < 6; i++) {
+                let randomIndex;
+                do {
+                    randomIndex = Math.floor(Math.random() * movies.length);
+                } while (usedIndexes.has(randomIndex));
+                usedIndexes.add(randomIndex);
 
-    movieElements.forEach((movieElement) => {
-        let randomIndex;
-        do {
-            randomIndex = Math.floor(Math.random() * movies.length);
-        } while (usedIndexes.has(randomIndex)); // Ensure no repetition
-        usedIndexes.add(randomIndex);
+                let movie = movies[randomIndex];
 
-        let movie = movies[randomIndex];
+                let movieCard = document.createElement("div");
+                movieCard.classList.add("movie-card");
 
-        movieElement.querySelector('.movie-list-item-img').src = `img/${movie.poster}`;
-        movieElement.querySelector('.movie-list-item-title').textContent = movie.name;
-        movieElement.querySelector('.movie-list-item-desc').textContent = movie.description;
+                movieCard.innerHTML = `
+                    <img src="${movie.poster}" alt="${movie.name}">
+                    <div class="movie-info">
+                        <div class="movie-title">${movie.name}</div>
+                        <p class="movie-desc">${movie.description}</p>
+                        <a href="details.html" class="movie-button" onclick="storeMovie('${movie.name}')">View Details</a>
+                    </div>
+                `;
 
-        // Set up button click to save data and go to details page
-        movieElement.querySelector('.movie-list-item-button').addEventListener('click', () => {
-            localStorage.setItem('selectedMovie', JSON.stringify(movie));
-            window.location.href = 'details.html';
+                movieContainer.appendChild(movieCard);
+            }
         });
-    });
-}
+});
 
-loadMovies();
+function storeMovie(movieName) {
+    fetch("movies.json")
+        .then(response => response.json())
+        .then(movies => {
+            let selectedMovie = movies.find(movie => movie.name === movieName);
+            localStorage.setItem("selectedMovie", JSON.stringify(selectedMovie));
+        });
+}
