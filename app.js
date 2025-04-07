@@ -34,7 +34,7 @@ ball.addEventListener("click", () => {
   ball.classList.toggle("active");
 });
 
-function goToGenre(id) {
+function goToPreset(id) {
   window.location.href = `preset.html?id=${id}`;
 }
 
