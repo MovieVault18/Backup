@@ -22,9 +22,57 @@ const movies = {
         { title: "The Lord of the Rings", poster: "lotr.jpg", rating: "9.0" }
     ],
     Marvel: [
-        { title: "The Shawshank Redemption", poster: "shawshank.jpg", rating: "9.3" },
-        { title: "Forrest Gump", poster: "forrestgump.jpg", rating: "8.8" }
-    ]
+  {
+    title: "Captain America",
+    poster: "img/m1.jpg",
+    rating: "6.9"
+  },
+  {
+    title: "Captain Marvel",
+    poster: "img/m2.jpg",
+    rating: "6.8"
+  },
+  {
+    title: "Iron Man",
+    poster: "img/m3.jpg",
+    rating: "7.9"
+  },
+  {
+    title: "The Incredible Hulk",
+    poster: "img/m4.jpg",
+    rating: "6.6"
+  },
+  {
+    title: "Thor",
+    poster: "img/m5.jpg",
+    rating: "7.0"
+  },
+  {
+    title: "The Avengers",
+    poster: "img/m6.jpg",
+    rating: "8.0"
+  },
+  {
+    title: "Spider-Man: Far From Home",
+    poster: "img/m7.jpg",
+    rating: "7.4"
+  },
+  {
+    title: "Avengers: Endgame",
+    poster: "img/m8.jpg",
+    rating: "8.4"
+  },
+  {
+    title: "Thor: The Dark World",
+    poster: "img/m9.jpg",
+    rating: "6.7"
+  },
+  {
+    title: "Captain America: The Winter Soldier",
+    poster: "img/m10.jpg",
+    rating: "7.7"
+  }
+]
 };
 
 // Get genre from URL
