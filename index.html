@@ -30,8 +30,9 @@
                     </li>
                     <li>
                         <div class="search-container">
-                            <input type="text" id="search-bar" placeholder="Search for a movie...">
-<button onclick="searchMovie()">Search</button>
+                            <input type="text" id="search-bar" placeholder="Search for a movie..." list="movie-list">
+                            <datalist id="movie-list"></datalist>
+                            <button onclick="searchMovie()">Search</button>
                         </div>
                     </li>
 
