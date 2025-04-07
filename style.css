@@ -459,3 +459,6 @@ body {
     background: #f0f0f0;
     color: black; 
 }
+#suggestions-box, #suggestions-box .suggestion {
+    color: black !important;
+}
