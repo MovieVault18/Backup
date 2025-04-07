@@ -152,21 +152,30 @@
         };
 
         const params = new URLSearchParams(window.location.search);
-const movieId = params.get("id");
 
-alert("Movie ID from URL: " + movieId); // Debugging
+    const movieId = params.get("id");
 
-if (movies[movieId]) { 
-    document.getElementById("movie-title").innerText = movies[movieId].title;
-    document.getElementById("movie-poster").src = movies[movieId].poster;
-    document.getElementById("movie-rating").innerText = `⭐ ${movies[movieId].rating}`;
-    document.getElementById("movie-genre").innerHTML += movies[movieId].genre;
-    document.getElementById("movie-year").innerHTML += movies[movieId].year;
-    document.getElementById("movie-description").innerText = movies[movieId].description;
-} else {
-    alert("Movie not found for ID: " + movieId); // Debugging
-    document.getElementById("movie-details").innerHTML = "<p>Movie not found.</p>";
-}
+
+
+    if (movies[movieId]) {
+
+        document.getElementById("movie-title").innerText = movies[movieId].title;
+
+        document.getElementById("movie-poster").src = movies[movieId].poster;
+
+        document.getElementById("movie-rating").innerText = `⭐ ${movies[movieId].rating}`;
+
+        document.getElementById("movie-genre").innerHTML += movies[movieId].genre;
+
+        document.getElementById("movie-year").innerHTML += movies[movieId].year;
+
+        document.getElementById("movie-description").innerText = movies[movieId].description;
+
+    } else {
+
+        document.getElementById("movie-details").innerHTML = "<p>Movie not found.</p>";
+
+    }
     </script>
 
 </body>
