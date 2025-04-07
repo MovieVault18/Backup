@@ -98,6 +98,30 @@
     "description": "An orphaned teen hits the road with mysterious robot to find her long lost brother",
     "year": "2025" 
   },
-  { "name": "MICKEY 17", "poster": "img/ad2.jpg", "rating": "7.0", "genre1": "Adventure", "genre2": "Science Fiction", "description": "Mickey 17, known as an 'expendable' goes on a dangerous journey to colonize an ice planet", "year": "2025" }, { "name": "INTERSTELLAR", "poster": "img/ad3.jpg", "rating": "8.7", "genre1": "Adventure", "genre2": "Science Fiction", "description": "When Earth becomes uninhabitable in the future, some people are tasked to pilot a spacecraft with researchers to find a new planet for humans.", "year": "2014" }, { "name": "SHAZAM! FURY OF THE GODS", "poster": "img/ad4.jpg", "rating": "5.9", "genre1": "Adventure", "genre2": "Comic", "description": "The film continues the story of teenage Billy Batson who, upon reciting the magic word 'SHAZAM!', is transformed into his adult superhero alter ego, Shazam.", "year": "2023" }, { "name": "CAPTAIN AMERICA: BRAVE NEW WORLD", "poster": "img/ad5.jpg", "rating": "5.9", "genre1": "Adventure", "genre2": "Action", "description": "Sam Wilson, the new Captain America, finds himself in the middle of an international incident and must discover the motive behind a nefarious global plan.", "year": "2025" }, { "name": "Twisters", "poster": "img/ad6.jpg", "rating": "6.5", "genre1": "Adventure", "genre2": "Thriller", "description": "Kate Carter, a retired tornado-chaser and meteorologist, is persuaded to return to Oklahoma to work with a new team and new technologies.", "year": "2024" }, { "name": "Gladiator II", "poster": "img/ad7.jpg", "rating": "6.5", "genre1": "Adventure", "genre2": "Action", "description": "After his home is conquered by the tyrannical emperors who now lead Rome, Lucius is forced to enter the Colosseum and must look to his past to find strength to return the glory of Rome to its people.", "year": "2024" }, { "name": "Venom: The Last Dance", "poster": "img/ad8.jpg", "rating": "6.0", "genre1": "Adventure", "genre2": "Thriller", "description": "Eddie Brock and Venom must make a devastating decision as they're pursued by a mysterious military man and alien monsters from Venom's home world.", "year": "2024" }, { "name": "The Hunger Games", "poster": "img/ad9.jpg", "rating": "7.2", "genre1": "Adventure", "genre2": "Action", "description": "Katniss Everdeen voluntarily takes her younger sister's place in the Hunger Games: a televised competition in which two teenagers from each of the twelve Districts of Panem are chosen at random to fight to the death.", "year": "2012" }, { "name": "Avengers: Endgame", "poster": "img/ad10.jpg", "rating": "8.4", "genre1": "Adventure", "genre2": "Action", "description": "After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.", "year": "2019" } ]
+  { "name": "MICKEY 17", 
+    "poster": "img/ad2.jpg", 
+    "rating": "7.0", 
+    "genre1": "Adventure", 
+    "genre2": "Science Fiction", 
+    "description": "Mickey 17, known as an 'expendable' goes on a dangerous journey to colonize an ice planet", "year": "2025" 
+  }, 
+  { "name": "INTERSTELLAR", 
+    "poster": "img/3.jpg", "rating": "8.7", "genre1": "Adventure", "genre2": "Science Fiction", "description": "When Earth becomes uninhabitable in the future, some people are tasked to pilot a spacecraft with researchers to find a new planet for humans.", "year": "2014" 
+  }, 
+  { "name": "SHAZAM! FURY OF THE GODS", "poster": "img/ad4.jpg", "rating": "5.9", "genre1": "Adventure", "genre2": "Comic", "description": "The film continues the story of teenage Billy Batson who, upon reciting the magic word 'SHAZAM!', is transformed into his adult superhero alter ego, Shazam.", "year": "2023" 
+  }, 
+  { "name": "CAPTAIN AMERICA: BRAVE NEW WORLD", "poster": "img/ad5.jpg", "rating": "5.9", "genre1": "Adventure", "genre2": "Action", "description": "Sam Wilson, the new Captain America, finds himself in the middle of an international incident and must discover the motive behind a nefarious global plan.", "year": "2025" 
+  }, 
+  { "name": "Twisters", "poster": "img/ad6.jpg", "rating": "6.5", "genre1": "Adventure", "genre2": "Thriller", "description": "Kate Carter, a retired tornado-chaser and meteorologist, is persuaded to return to Oklahoma to work with a new team and new technologies.", "year": "2024" 
+  }, 
+  { "name": "Gladiator II", "poster": "img/ad7.jpg", "rating": "6.5", "genre1": "Adventure", "genre2": "Action", "description": "After his home is conquered by the tyrannical emperors who now lead Rome, Lucius is forced to enter the Colosseum and must look to his past to find strength to return the glory of Rome to its people.", "year": "2024" 
+  }, 
+  { "name": "Venom: The Last Dance", "poster": "img/ad8.jpg", "rating": "6.0", "genre1": "Adventure", "genre2": "Thriller", "description": "Eddie Brock and Venom must make a devastating decision as they're pursued by a mysterious military man and alien monsters from Venom's home world.", "year": "2024" 
+  }, 
+  { "name": "The Hunger Games", "poster": "img/ad9.jpg", "rating": "7.2", "genre1": "Adventure", "genre2": "Action", "description": "Katniss Everdeen voluntarily takes her younger sister's place in the Hunger Games: a televised competition in which two teenagers from each of the twelve Districts of Panem are chosen at random to fight to the death.", "year": "2012" 
+  }, 
+  { "name": "Avengers: Endgame", "poster": "img/m8.jpg", "rating": "8.4", "genre1": "Adventure", "genre2": "Action", "description": "After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.", "year": "2019" 
+  } 
+]
 
   
