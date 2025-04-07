@@ -6,9 +6,57 @@ const movies = {
 
     ],
     Thriller: [
-        { title: "Inception", poster: "img/.jpg", rating: "8.8" },
-        { title: "Gone Girl", poster: "gonegirl.jpg", rating: "8.1" }
-    ],
+  {
+    title: "Andhadhun",
+    poster: "img/t1.jpg",
+    rating: "8.2"
+  },
+  {
+    title: "Kahaani",
+    poster: "img/t2.jpg",
+    rating: "8.1"
+  },
+  {
+    title: "Drishyam",
+    poster: "img/t3.jpg",
+    rating: "8.2"
+  },
+  {
+    title: "Shutter Island",
+    poster: "img/t4.jpg",
+    rating: "8.2"
+  },
+  {
+    title: "Ratsasan",
+    poster: "img/t5.jpg",
+    rating: "8.3"
+  },
+  {
+    title: "Fight Club",
+    poster: "img/t6.jpg",
+    rating: "8.8"
+  },
+  {
+    title: "The Silence of the Lambs",
+    poster: "img/t7.jpg",
+    rating: "8.6"
+  },
+  {
+    title: "The Prestige",
+    poster: "img/t8.jpg",
+    rating: "8.5"
+  },
+  {
+    title: "Kaithi",
+    poster: "img/t9.jpg",
+    rating: "8.4"
+  },
+  {
+    title: "Inception",
+    poster: "img/t10.jpg",
+    rating: "8.8"
+  }
+],
     Drama: [
         { title: "The Shawshank Redemption", poster: "shawshank.jpg", rating: "9.3" },
         { title: "Forrest Gump", poster: "forrestgump.jpg", rating: "8.8" }
