@@ -127,7 +127,7 @@ body {
 }
 
 .movie-list-container {
-  padding: 0 2px;
+  padding: 0 20px;
 }
 
 .movie-list-wrapper {
@@ -448,7 +448,6 @@ body {
 }
 
 .search-item {
-    padding: 10px;
     cursor: pointer;
     color: black !important;  /* Ensure text is black */
     background: white;
